@@ -16,6 +16,11 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+We iterate through each vertex, which involves V iterations.
+For each vertex, we iterate through its adjacent vertices in the adjacency matrix to determine the edges, which could involve examining up to V elements in the row.
+Hence, the runtime complexity of the conversion process is O(V^2).
+
+The conversion process doesn't directly depend on the number of edges in the graph because it only looks at the adjacency matrix, which contains information about potential edges but doesn't need to explicitly count the number of edges.
 ## Bonus
 
 Implement a function to convert an adjacency list to an adjacency matrix and
